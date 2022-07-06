@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="dashBordContex" prefHeight="1080.0" prefWidth="1920.0" stylesheets="@../../assert/css/Table.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.dashboardControllers.DashBoardController">
+    <children>
+        <ImageView fitHeight="1080.0" fitWidth="1920.0" pickOnBounds="true">
+            <image>
+                <Image url="@../../assert/images/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay.jpg" />
+            </image>
+        </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00000005" height="1080.0" stroke="BLACK" strokeType="INSIDE" width="1920.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#000000cc" height="1080.0" stroke="BLACK" strokeType="INSIDE" width="1920.0" />
+      <BorderPane prefHeight="1080.0" prefWidth="1920.0">
+         <center>
+              <AnchorPane prefHeight="1034.0" prefWidth="1690.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane fx:id="WorkingContex" layoutX="4.0" layoutY="1.0" prefHeight="1028.0" prefWidth="1912.0" />
+               </children>
+            </AnchorPane>
+         </center>
+         <top>
+            <AnchorPane prefHeight="50.0" prefWidth="1920.0" BorderPane.alignment="CENTER">
+               <children>
+                      <JFXButton layoutX="42.0" layoutY="5.0" maxHeight="40.0" onAction="#reservwComputerOnaction" opacity="0.8" prefHeight="40.0" prefWidth="180.0" styleClass="menuItem" stylesheets="@../../assert/css/css.css" text="Order" textFill="WHITE">
+                          <font>
+                              <Font name="System Bold" size="17.0" />
+                          </font>
+                      </JFXButton>
+                      <JFXButton layoutX="222.0" layoutY="5.0" maxHeight="40.0" onAction="#ManageCustomerOnAction" opacity="0.8" prefHeight="40.0" prefWidth="180.0" styleClass="menuItem" stylesheets="@../../assert/css/css.css" text="Income" textFill="WHITE">
+                          <font>
+                              <Font name="System Bold" size="17.0" />
+                          </font>
+                      </JFXButton>
+                      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="1873.0" layoutY="-3.0" onMouseClicked="#closeMouseOnAction" opacity="0.8" pickOnBounds="true" preserveRatio="true" y="10.0">
+                          <image>
+                              <Image url="@../../assert/images/outline_close_white_48dp.png" />
+                          </image>
+                      </ImageView>
+                      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="1821.0" layoutY="-3.0" onMouseClicked="#logOutMouseClickOnAction" opacity="0.8" pickOnBounds="true" preserveRatio="true" y="10.0">
+                          <image>
+                              <Image url="@../../assert/images/outline_logout_white_48dp.png" />
+                          </image>
+                      </ImageView>
+                      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="1760.0" layoutY="-3.0" opacity="0.8" pickOnBounds="true" preserveRatio="true" y="10.0">
+                          <image>
+                              <Image url="@../../assert/images/outline_home_white_48dp.png" />
+                          </image>
+                      </ImageView>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+    </children>
+</AnchorPane>

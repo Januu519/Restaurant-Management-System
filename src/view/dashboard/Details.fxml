@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="WorkingContex" prefHeight="1028.0" prefWidth="1912.0" stylesheets="@../../assert/css/Table.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.dashboardControllers.DetailsControl">
+   <children>
+      <LineChart fx:id="lineChart" layoutX="47.0" layoutY="47.0" prefHeight="583.0" prefWidth="692.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <TableView fx:id="tblCustomer" layoutX="971.0" layoutY="672.0" prefHeight="352.0" prefWidth="937.0" stylesheets="@../../assert/css/Table.css">
+         <columns>
+            <TableColumn fx:id="colCustomerID" prefWidth="106.0" text="Customer ID" />
+            <TableColumn fx:id="colCustomerName" prefWidth="198.0" text="Name" />
+            <TableColumn fx:id="colCustomerNic" prefWidth="166.0" text="Nic" />
+            <TableColumn fx:id="colCustomerAddress" prefWidth="147.0" text="Address" />
+            <TableColumn fx:id="colCustomerEmail" prefWidth="172.0" text="Email" />
+            <TableColumn fx:id="colCustomerContact" prefWidth="172.0" text="Contact" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tblFood" layoutX="24.0" layoutY="672.0" prefHeight="352.0" prefWidth="937.0" stylesheets="@../../assert/css/Table.css">
+         <columns>
+            <TableColumn fx:id="colFoodID" prefWidth="141.0" text="Foods ID" />
+            <TableColumn fx:id="colFoodName" prefWidth="276.0" text="Food Name" />
+            <TableColumn fx:id="colFoodType" prefWidth="213.0" text="Food Type" />
+            <TableColumn fx:id="colFoodSize" prefWidth="190.0" text="Food Size" />
+            <TableColumn fx:id="colFoodPrice" prefWidth="116.0" text="Food Price" />
+         </columns>
+      </TableView>
+      <TableView fx:id="ordersTable" layoutX="760.0" layoutY="47.0" prefHeight="569.0" prefWidth="1143.0" stylesheets="@../../assert/css/Table.css">
+         <columns>
+            <TableColumn fx:id="colOrderId" prefWidth="59.0" text="Order ID" />
+            <TableColumn fx:id="colOrderFoodId" prefWidth="79.0" text="Food ID" />
+            <TableColumn fx:id="colOrderFoodName" prefWidth="201.0" text="Food  Name" />
+            <TableColumn fx:id="colOrderCustomerId" prefWidth="87.0" text="Customer ID" />
+            <TableColumn fx:id="colOrderCustomerName" prefWidth="272.0" text="Customer Name" />
+            <TableColumn fx:id="colOrderType" prefWidth="152.0" text="Order Type" />
+            <TableColumn fx:id="colOrderDateTime" minWidth="0.0" prefWidth="162.0" text="Date Time" />
+            <TableColumn fx:id="colOrderQty" prefWidth="422.0" text="Qty" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

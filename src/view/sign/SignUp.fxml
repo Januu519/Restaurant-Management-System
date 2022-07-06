@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="signUpContex" prefHeight="397.0" prefWidth="424.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.sign.SignUpController">
+    <children>
+        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="29.0" layoutY="123.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../assert/images/outline_email_white_48dp.png" />
+            </image>
+        </ImageView>
+        <JFXTextField fx:id="txtFullName" focusColor="WHITE" labelFloat="true" layoutX="76.0" layoutY="46.0" prefHeight="40.0" prefWidth="309.0" promptText="FULL NAME" style="-fx-prompt-text-fill: white; -fx-text-fill: white; -fx-text-Style: Serif;" unFocusColor="#000000bf">
+            <font>
+                <Font name="System Bold Italic" size="13.0" />
+            </font>
+        </JFXTextField>
+        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="31.0" layoutY="46.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../assert/images/outline_person_white_48dp.png" />
+            </image>
+        </ImageView>
+        <JFXButton layoutX="62.0" layoutY="353.0" onAction="#signInOnAction" text="Already have an account?" textFill="WHITE">
+            <font>
+                <Font name="System Italic" size="13.0" />
+            </font>
+        </JFXButton>
+        <JFXTextField fx:id="txtEmail" focusColor="WHITE" labelFloat="true" layoutX="76.0" layoutY="117.0" prefHeight="40.0" prefWidth="309.0" promptText="E - MAIL" style="-fx-prompt-text-fill: white; -fx-text-fill: white; -fx-text-Style: Serif;" unFocusColor="#000000bf">
+            <font>
+                <Font name="System Bold Italic" size="13.0" />
+            </font>
+        </JFXTextField>
+        <JFXTextField fx:id="txtContact" focusColor="WHITE" labelFloat="true" layoutX="76.0" layoutY="188.0" prefHeight="40.0" prefWidth="309.0" promptText="CONTACT NUMBER" style="-fx-prompt-text-fill: white; -fx-text-fill: white; -fx-text-Style: Serif;" unFocusColor="#000000bf">
+            <font>
+                <Font name="System Bold Italic" size="13.0" />
+            </font>
+        </JFXTextField>
+        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="31.0" layoutY="194.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../assert/images/outline_call_white_48dp.png" />
+            </image>
+        </ImageView>
+        <JFXTextField fx:id="txtPassword" focusColor="WHITE" labelFloat="true" layoutX="80.0" layoutY="259.0" prefHeight="40.0" prefWidth="309.0" promptText="PASSWORD" style="-fx-prompt-text-fill: white; -fx-text-fill: white; -fx-text-Style: Serif;" unFocusColor="#000000bf">
+            <font>
+                <Font name="System Bold Italic" size="13.0" />
+            </font>
+        </JFXTextField>
+        <JFXPasswordField fx:id="txtpasswordfield" focusColor="WHITE" labelFloat="true" layoutX="80.0" layoutY="259.0" prefHeight="40.0" prefWidth="309.0" promptText="PASSWORD" style="-fx-prompt-text-fill: white; -fx-text-fill: white; -fx-text-Style: Serif;" unFocusColor="#000000bf">
+            <font>
+                <Font name="System Bold Italic" size="13.0" />
+            </font>
+        </JFXPasswordField>
+        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="35.0" layoutY="266.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../assert/images/outline_password_white_48dp.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="vision" fitHeight="25.0" fitWidth="25.0" layoutX="358.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../assert/images/outline_visibility_white_24dp.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="visioff" fitHeight="25.0" fitWidth="25.0" layoutX="358.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../assert/images/outline_visibility_off_white_24dp.png" />
+            </image>
+        </ImageView>
+        <JFXButton layoutX="350.0" layoutY="266.0" onMouseEntered="#entermouseOnaction" onMouseExited="#exitemouseonaction" prefHeight="40.0" prefWidth="40.0" text=" " />
+      <JFXButton layoutX="298.0" layoutY="349.0" onAction="#SignUpOnAction" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+    </children>
+</AnchorPane>
